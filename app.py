@@ -17,13 +17,11 @@ st.markdown('''
 side = st.sidebar
 
 side.markdown('## Choose the stock to predict')
-stock = side.selectbox("Stock", ("Apple","Boeing", "Caterpillar", "Coca Cola", "Tesla", "3M"))
+stock = side.selectbox("Stock", ("Apple","Boeing", "Tesla", "3M"))
 
 # can add more in future
 ticker_dict  = {'Apple': 'aapl',
                 'Boeing': 'ba',
-                'Caterpillar': 'cat',
-                "Coca Cola": 'ko',
                 "Tesla": 'tsla',
                 "3M": 'mmm'
 }
