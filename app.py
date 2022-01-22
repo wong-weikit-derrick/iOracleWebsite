@@ -10,7 +10,7 @@ st.title('iOracle')
 st.subheader('Predicting the Future Prices of Stocks with Machine Learning')
 st.markdown('''
             This Data Science project illustrates how an Ensemble Method with LSTM and Random Forest 
-            was used to predict the 5-Day future price of Apple's stock based on the past 30 days worth of data.
+            was used to predict the 5-Day future price of stocks based on the past 30 days worth of data.
             ''')
 
 # sidebar choices
