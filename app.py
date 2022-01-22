@@ -7,7 +7,7 @@ from ta.volatility import BollingerBands
 import plotly.graph_objs as go
 
 st.title('iOracle')
-st.subheader('Predicting the Future Prices of Apple Stock with Machine Learning')
+st.subheader('Predicting the Future Prices of Stocks with Machine Learning')
 st.markdown('''
             This Data Science project illustrates how an Ensemble Method with LSTM and Random Forest 
             was used to predict the 5-Day future price of Apple's stock based on the past 30 days worth of data.
@@ -17,10 +17,16 @@ st.markdown('''
 side = st.sidebar
 
 side.markdown('## Choose the stock to predict')
-stock = side.selectbox("Stock", ("Apple",))
+stock = side.selectbox("Stock", ("Apple","Boeing", "Caterpillar", "Coca Cola", "Tesla", "3M"))
 
 # can add more in future
-ticker_dict  = {'Apple': 'aapl'}
+ticker_dict  = {'Apple': 'aapl',
+                'Boeing': 'ba',
+                'Caterpillar': 'cat',
+                "Coca Cola": 'ko',
+                "Tesla": 'tsla',
+                "3M": 'mmm'
+}
 
 # get api
 api_url = "https://ioraclev2-dh3l3t4ama-ew.a.run.app/predict"
